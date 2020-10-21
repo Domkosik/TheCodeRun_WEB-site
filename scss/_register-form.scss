@@ -1,0 +1,33 @@
+// REGISTER FORM
+//---------------------------------------------------
+
+form {
+    margin-top: em(30);
+    margin-bottom: em(50);
+
+    & p {
+    color: $color-text-form;
+    }
+    
+    & .btn-reg {
+        margin-top: em(20,18);
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+input[type=text], input[type=password] {
+
+    width: 100%;
+    padding: em(15);
+    margin: em(5) 0 em(22) 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;    
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}

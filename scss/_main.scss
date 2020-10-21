@@ -1,0 +1,80 @@
+// MAIN
+//---------------------------------------------------
+
+.questions {
+
+    font-size: em(30);
+    text-align: center;
+    text-shadow: 0 0 em(10,30) #fff, 
+                    0 0 em(20,30) #fff, 
+                    0 0 em(30,30) #fff, 
+                    0 0 em(40,30) #00ccff, 
+                    0 0 em(70,30) #00ccff, 
+                    0 0 em(80,30) #00ccff, 
+                    0 0 em(100,30) #00ccff, 
+                    0 0 em(150,30) #00ccff;
+     & h2 {
+         margin-bottom: em(20,30);
+     }
+}  
+
+section h2 {
+    margin: 0;
+    margin-top: em(40);
+    margin-bottom: em(15);
+    text-align: center;
+}
+
+.text {
+    font-size: em(20,30);
+    text-align: center;
+    text-shadow: none;
+    margin-bottom: em(10,30);
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+
+    & a {
+        color: $color-text-links;
+        text-decoration: underline;
+    }
+
+    & aside {
+         flex-basis: 48%;
+         align-self: normal;
+         height: auto;
+         margin: em(10) 0 em(20) 0;
+         padding: em(10);
+         border: em(5) solid turquoise;
+         border-radius: em(6);
+         background: #fff;
+         line-height: 1.5;
+         text-align: left;
+
+         & span {
+             text-transform: uppercase;
+             color: lighten($color-text ,50%);
+         }
+    }
+
+    & .a1, .a3 {margin-right: em(25);}
+
+    & .flex-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    & .btn-reg {
+         
+            font-size: em(18);
+            padding: em(10,18);
+            border-radius: em(3,18);
+            color: #fff;
+            text-decoration: none;
+            background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(125,125,125,1) 68%, rgba(82,82,82,1) 82%, rgba(47,47,47,1) 93%, rgba(0,0,0,1) 100%);
+    }
+}

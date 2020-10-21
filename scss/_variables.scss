@@ -1,0 +1,16 @@
+// VARIABLES
+//---------------------------------------------------
+
+$color-text: #000;
+$color-bg-body: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
+$color-bg-footer: ligten(#000, 10%);
+$color-text-links: #3B82BF;
+$color-bg-links: linear-gradient(180deg, rgba(45,247,255,1) 0%, rgba(255,255,255,1) 100%);
+$color-text-footer: #fff;
+$color-text-form: #fff;
+
+
+
+@function em($size, $context: 16) {
+    @return ($size / $context) + em;
+}

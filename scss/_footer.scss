@@ -1,0 +1,31 @@
+// FOOTER
+//---------------------------------------------------
+
+footer {
+    font-size: em(17);
+    color: $color-text-footer;
+    background: $color-bg-footer;
+    padding: em(20,17) 0 em(20,17) 0;
+    margin-top: em(20,17);
+
+    & a {
+        display: inline-block;
+        color: $color-text-footer;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+
+    & .container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    & p {
+        margin: em(10,17) em(100,17) em(10,17) em(100,17);
+    }
+}

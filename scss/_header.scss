@@ -1,0 +1,71 @@
+// HEADER
+//---------------------------------------------------
+
+header .container {
+    max-width: 90%;
+}
+
+.header1 {  
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   & .small_logo {
+       
+   }
+
+   & .sm_logo {
+       max-width: em(90);
+       height: auto;
+       border-radius: em(20);
+   }   
+
+   & p {
+       display: inline-block;
+       margin-left: em(20);
+       flex-grow:1;
+       font-weight: bold;
+       font-size: em(20);
+   }
+}
+
+.menu {
+
+   & li {
+       display: inline-block;
+       margin: 0  em(10) 0 em(10);
+   }
+   
+   & a {
+       text-transform: uppercase;
+       color: $color-text-links;
+       background: $color-bg-links;
+       border-radius: em(20) 0px em(20) 0px;
+       padding: em(10) em(10) em(9) em(10);
+       
+
+       &:hover,
+       &:focus {
+           cursor: pointer; 
+           color: darken($color-text-links, 20%);
+       }
+   
+   }
+}
+
+.logo_section {
+
+   text-align: center;
+
+   & h1 {
+       font-size: em(40);
+       text-transform: uppercase;
+       letter-spacing: em(15,40);
+
+       & code {
+           font-family: 'Oswald', sans-serif;
+       }
+
+   }
+
+}
