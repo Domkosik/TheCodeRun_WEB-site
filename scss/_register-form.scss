@@ -31,3 +31,8 @@ input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
     outline: none;
 }
+
+#emailMsgInval, #emailMsgVal, #passwordMsgVal, #passwordMsgInval, #passwordRMsgInval, #passwordRMsgVal {
+	display: none;
+	text-align: center;
+}

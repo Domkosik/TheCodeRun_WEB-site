@@ -7,8 +7,7 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileColor" content="#ffc40d">
 	<meta name="theme-color" content="#ffffff">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Rokkitt&family=Russo+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
@@ -27,6 +26,7 @@
 			<img class="sm_logo" src="img/logicon.png" alt="small_logo">
 			
 			<p>01.12.2020 - 04.12.2020 ONLINE</p>
+			<div class="bar-icon"><i class="fas fa-bars fa-2x"></i></div>
 			<nav>
 				<ul class="menu">
 					<li><a href="index.html">Úvod</a></li>
@@ -51,18 +51,24 @@
 			<article class="flex">
 				<form action="/action_page.php">
                     <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Zadaj email" name="email" id="email" required>
+					<input type="text" placeholder="Zadaj email" name="email" id="email" required>
+					<span id="emailMsgInval">Email is invalid.</span>
+					<span id="emailMsgVal">Email is valid.</span>
                 
                     <label for="psw"><b>Heslo</b></label>
-                    <input type="password" placeholder="Zadaj heslo" name="psw" id="psw" required>
+					<input type="password" placeholder="Zadaj heslo" name="psw" id="psw" required>
+					<span id="passwordMsgInval">Password is invalid.</span>
+					<span id="passwordMsgVal">Password is valid.</span>
                 
                     <label for="psw-repeat"><b>Zopakuj heslo</b></label>
-                    <input type="password" placeholder="Opakuj zadanie hesla" name="psw-repeat" id="psw-repeat" required>
+					<input type="password" placeholder="Opakuj zadanie hesla" name="psw-repeat" id="psw-repeat" required>
+					<span id="passwordRMsgInval">Password does not match.</span>
+					<span id="passwordRMsgVal">Password matches.</span>
                     <hr>
                     <p>Vytvorením účtu súhlasíte s našimi <a href="#">podmienkami a ochranou osobných údajov</a>.</p>
                 
                     <button type="submit" class="btn-reg">Registruj</button>
-                  </form> 
+                </form> 
 			</article>
 		</section>
 	</main>
@@ -77,6 +83,9 @@
 			</p>
 		</div>
 	</footer>
+
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 

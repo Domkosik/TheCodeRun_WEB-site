@@ -42,8 +42,29 @@
     }
 }
 
-
 @media  (max-width: 700px) {
+
+    .bar-icon{
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .bar-menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 90%;
+        background-color: rgba(105, 96, 96, 0.5);
+        border-radius: 1.5em;
+
+        & li {
+            margin-top: em(15);
+            margin-bottom: em(15);
+        }
+    }
 
     .sm_logo {
         position: absolute;
@@ -54,15 +75,6 @@
         margin-top: 0;
     }
 
-    .menu {
-        display: flex;
-        flex-direction: column;
-
-        & li {
-            margin-top: em(15);
-            margin-bottom: em(15);
-        }
-    }
 }
 
 @media  (max-width: 600px) {
@@ -86,3 +98,8 @@
    }
 }
 
+@media  (max-width: 380px) {
+    .bar-icon i {
+        font-size: 1.5em;
+    }
+}
